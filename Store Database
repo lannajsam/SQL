@@ -1,0 +1,21 @@
+CREATE TABLE lannas_shop (id INTEGER PRIMARY KEY, model TEXT, color TEXT, quantity INTEGER, brand TEXT, price INTEGER);
+
+INSERT INTO lannas_shop VALUES (1, "Galaxy S24", "white", 5, "Samsung", 699);
+INSERT INTO lannas_shop VALUES (2, "iPhone 15 SE", "red", 3, "Apple", 429);
+INSERT INTO lannas_shop VALUES (3, "iPhone 15", "black", 8, "Apple", 699);
+INSERT INTO lannas_shop VALUES (4, "Pixel 8", "black", 4, "Google", 699);
+INSERT INTO lannas_shop VALUES (5, "Razr+", "orange", 15, "Motorola", 999);
+INSERT INTO lannas_shop VALUES (6, "iPhone 16", "purple", 10, "Apple", 799);
+INSERT INTO lannas_shop VALUES (7, "Galaxy S25", "black", 3, "Samsung", 799);
+INSERT INTO lannas_shop VALUES (8, "Pixel 9 Pro", "grey", 10, "Google", 999);
+INSERT INTO lannas_shop VALUES (9, "Galaxy Z Flip6", "black", 10, "Samsung", 1099);
+INSERT INTO lannas_shop VALUES (10, "G310", "black", 3, "Nokia", 168);
+INSERT INTO lannas_shop VALUES (11, "g power", "pink", 12, "Motorola", 300);
+INSERT INTO lannas_shop VALUES (12, "Pixel 8a", "blue", 2, "Google", 500);
+INSERT INTO lannas_shop VALUES (13, "g stylus", "silver", 5, "Motorola", 400);
+INSERT INTO lannas_shop VALUES (14, "iPhone SE", "black", 2, "Apple", 429);
+INSERT INTO lannas_shop VALUES (15, "moto g", "silver", 7, "Motorola", 60);
+
+SELECT * FROM lannas_shop ORDER BY price ASC;
+
+SELECT AVG(price) AS average_price FROM lannas_shop;
